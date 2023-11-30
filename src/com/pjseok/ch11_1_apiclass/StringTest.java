@@ -36,9 +36,24 @@ public class StringTest {
 		System.out.println(ssn.substring(0, 6)); // 인덱스 0~5까지 슬라이싱(6은 포함 안됨)
 		System.out.println(ssn.substring(6)); // 인데스 6부터 끝까지 슬라이싱
 		
+		String strnum = "1000000";
+	
+		int totalMoney = Integer.parseInt(strnum);
+		double totalMoney2 = Double.parseDouble(strnum); // 문자열을 실수로 
+		// Integer int1 = new Integer(strnum); 
 		
+		double mok = totalMoney / 5;
 		
+		// 0.0 => math.random() < 1.0
 		
+		System.out.println(Math.random()); // 랜덤수 반환 -> 0.0 ~ 1.0 사이의 수를 랜덤 수 반환
+		System.out.println((int)(Math.random() * 11)); // 0~10 사이의 정수 중 한개가 반환
+		System.out.println((int)(Math.random() * 10)+1); // 1~10 사이의 정수 중 한개가 반환
+		System.out.println((int)(Math.random() * 20)+1); // 1~20 사이의 정수 중 한개가 반환
+		System.out.println((int)(Math.random() * 45)+1); // 1~45 사이의 정수 중 한개가 반환
+	
+	
+	
 	}
 
 }
